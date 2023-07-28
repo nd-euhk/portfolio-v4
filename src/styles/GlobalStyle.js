@@ -370,8 +370,8 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     z-index: -99;
 
-    &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       background-color: var(--green);
       color: var(--navy);
       top: 0;
@@ -380,8 +380,6 @@ const GlobalStyle = createGlobalStyle`
       height: auto;
       overflow: auto;
       z-index: 99;
-      box-shadow: none;
-      transform: none;
     }
   }
 

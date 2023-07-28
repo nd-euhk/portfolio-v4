@@ -1,27 +1,23 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'melody.of.thewind@outlook.com',
 
   socialMedia: [
+    // {
+    //   name: 'Facebook',
+    //   url: 'https://www.facebook.com/khue.zlife',
+    // },
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/nd-euhk',
     },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
-    },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
+    // {
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/lone_Musk',
+    // },
+    // {
+    //   name: 'Linkedin',
+    //   url: 'https://www.linkedin.com/in/nd-euhk/',
+    // },
   ],
 
   navLinks: [

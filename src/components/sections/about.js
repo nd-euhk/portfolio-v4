@@ -66,10 +66,10 @@ const StyledPic = styled.div`
     &:hover,
     &:focus {
       outline: 0;
-      transform: translate(-4px, -4px);
 
       &:after {
-        transform: translate(8px, 8px);
+        top: 15px;
+        left: 15px;
       }
 
       .img {
@@ -106,8 +106,8 @@ const StyledPic = styled.div`
 
     &:after {
       border: 2px solid var(--green);
-      top: 14px;
-      left: 14px;
+      top: 20px;
+      left: 20px;
       z-index: -1;
     }
   }
@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['Java', 'NodeJS', 'React', 'AWS', 'Docker', 'CI/CD'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,34 +134,16 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>A Passionate Software Engineer and Adventurous Explorer.</p>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello, I'm Khue, a software engineer with a burning passion for coding and an
+              insatiable curiosity for the world. With a keen eye for innovation and a love for
+              learning, I constantly strive to push the boundaries of what's possible in the realm
+              of technology. But beyond the screen, I am also an intrepid explorer, embarking on
+              thrilling adventures that feed my soul and inspire my creativity. Join me on this
+              exciting journey as I showcase my coding prowess and share my remarkable travel
+              experiences. Welcome to my portfolio!
             </p>
-
-            <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -173,9 +155,9 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/profile.jpg"
               width={500}
-              quality={95}
+              quality={100}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"
             />

@@ -9,14 +9,15 @@ const button = css`
   font-family: var(--font-mono);
   line-height: 1;
   text-decoration: none;
-  padding: 1.25rem 1.75rem;
+  cursor: pointer;
   transition: var(--transition);
+  padding: 1.25rem 1.75rem;
 
   &:hover,
-  &:focus-visible {
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
     outline: none;
-    box-shadow: 4px 4px 0 0 var(--green);
-    transform: translate(-5px, -5px);
   }
   &:after {
     display: none !important;
@@ -43,9 +44,9 @@ const mixins = {
     color: inherit;
     position: relative;
     transition: var(--transition);
-
     &:hover,
-    &:focus-visible {
+    &:active,
+    &:focus {
       color: var(--green);
       outline: 0;
     }
@@ -53,12 +54,14 @@ const mixins = {
 
   inlineLink: css`
     display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
     position: relative;
-    color: var(--green);
     transition: var(--transition);
-
+    color: var(--green);
     &:hover,
-    &:focus-visible {
+    &:focus,
+    &:active {
       color: var(--green);
       outline: 0;
       &:after {
@@ -77,10 +80,8 @@ const mixins = {
       position: relative;
       bottom: 0.37em;
       background-color: var(--green);
+      transition: var(--transition);
       opacity: 0.5;
-      @media (prefers-reduced-motion: no-preference) {
-        transition: var(--transition);
-      }
     }
   `,
 
@@ -96,13 +97,13 @@ const mixins = {
     font-family: var(--font-mono);
     line-height: 1;
     text-decoration: none;
+    cursor: pointer;
     transition: var(--transition);
-
     &:hover,
-    &:focus-visible {
+    &:focus,
+    &:active {
+      background-color: var(--green-tint);
       outline: none;
-      box-shadow: 3px 3px 0 0 var(--green);
-      transform: translate(-4px, -4px);
     }
     &:after {
       display: none !important;
@@ -119,13 +120,13 @@ const mixins = {
     font-family: var(--font-mono);
     line-height: 1;
     text-decoration: none;
+    cursor: pointer;
     transition: var(--transition);
-
     &:hover,
-    &:focus-visible {
+    &:focus,
+    &:active {
+      background-color: var(--green-tint);
       outline: none;
-      box-shadow: 4px 4px 0 0 var(--green);
-      transform: translate(-5px, -5px);
     }
     &:after {
       display: none !important;
@@ -137,7 +138,7 @@ const mixins = {
     transition: var(--transition);
 
     &:hover,
-    &:focus-visible {
+    &:focus {
       box-shadow: 0 20px 30px -15px var(--navy-shadow);
     }
   `,
